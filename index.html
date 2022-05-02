@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News App</title>
+    <style>
+      body{
+        background-color: bisque;
+      }
+      #navbar{
+        /* background-color: grey; */
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+      }
+      #search_input{
+        width: 500px;
+        height: 40px;
+        border-radius: 10px;
+      }
+      #sidebar{
+        border: 1px solid black;
+      }
+      #block{
+        border: 1px solid red;
+      }
+      a{
+        text-decoration: none; 
+      }
+      #headname{
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Give Navbar with id "navbar"  -->
+    <!-- Navbar will have input with id search_input and a link to home page i.e. index.html -->
+    <!-- Sidebar will have id "sidebar"  -->
+    <!-- Give link to top headlines of countries in sidebar with id as their country codes 
+    india :- in
+    china :- ch
+    usa :- us
+    uk : uk
+    Newzeland :- nz -->
+
+    <!-- Append results inside div with id "results"  -->
+    <!-- News divs will have class "news"  -->
+
+    <div id="navbar">
+      <a href="./index.html" id="headname">Newsapp</a>
+      <input type="search" id="search_input" placeholder="Search News">
+    </div>
+     <div id="block">
+      <div id="sidebar">
+        <h2>Countries</h2>
+        <a href=""><h3 id="in" onclick="searchbyid()">India</h3></a>
+        <a href=""><h3 id="ch" onclick="searchbyid()">China</h3></a>
+        <a href=""><h3 id="us" onclick="searchbyid()">Usa</h3></a>
+        <a href=""><h3 id="uk" onclick="searchbyid()">United Kingdom</h3></a>
+        <a href=""><h3 id="nz" onclick="searchbyid()">New Zealand</h3></a>
+      </div>
+      <div id="results"></div>
+     </div>
+  </body>
+</html>
+<script src="./scripts/index.js"></script>
