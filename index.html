@@ -21,7 +21,7 @@
         border-radius: 10px;
       }
       #sidebar{
-        border: 1px solid black;
+         border: 1px solid black; 
         width: 200px;
       }
       #results img{
@@ -31,7 +31,7 @@
         margin: 10px;
       }
       #block{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: flex;
       }
       h3{
@@ -42,6 +42,10 @@
       }
       #headname{
         font-size: 30px;
+      }
+      #results{
+        width: 85%;
+        /* border: 1px solid black; */
       }
     </style>
   </head>
@@ -66,14 +70,14 @@
      <div id="block">
       <div id="sidebar">
         <h2>Countries</h2>
-        <h3 id="in" onclick="searchbyid('in')">India</h3>
-        <h3 id="ch" onclick="searchbyid('ch')">China</h3>
-        <h3 id="us" onclick="searchbyid('us')">Usa</h3>
-        <h3 id="uk" onclick="searchbyid('uk')">United Kingdom</h3>
-        <h3 id="nz" onclick="searchbyid('nz')">New Zealand</h3>
+        <h3 id="in">India</h3>
+        <h3 id="ch">China</h3>
+        <h3 id="us">USA</h3>
+        <h3 id="uk">UK</h3>
+        <h3 id="nz">Newzealand</h3>
       </div>
       <div id="results"></div>
      </div>
   </body>
+  <script type="module" src="./scripts/index.js"></script>
 </html>
-<script src="./scripts/index.js"></script>
