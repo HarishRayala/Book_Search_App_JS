@@ -27,7 +27,7 @@ function displayBooks(items){
     searchFor.style.display="block";
     
     items.map((item)=>{
-        console.log(item.volumeInfo);
+        // console.log(item.volumeInfo);
         let book=item.volumeInfo;
         let bookBox=document.createElement("div");
         bookBox.setAttribute("class","bookBox");
